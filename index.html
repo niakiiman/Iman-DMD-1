@@ -12,7 +12,7 @@
         html {
         font-family: "Noto Sans KR", sans-serif;
         font-optical-sizing: auto;
-        font-weight: <400>;
+        font-weight: 400;
         font-style: normal; 
         line-height: 2
         }
@@ -24,20 +24,30 @@
         header, footer, div.container {width: 800px; margin: auto;}
         h1 {font-weight: 900; font-size: 3rem; padding-bottom: 10px;}
         h2 {padding-top: 30px; font-size: 2rem; padding-bottom: 10px; font-weight: 700;}
-        p {padding-top: 10px; padding-bottom: 50px; font-size: 1.2rem;}
+        p {
+            padding-top: 10px; padding-bottom: 50px; font-size: 1.1rem; 
+            word-break: keep-all;
+            overflow-wrap: break-word;
+            white-space: normal;
+        }
         img {width: 100%; display: block}
+        .highlight {color: darkred;}
+        .highlight2 {color: red;}
         .left-spacing {padding-left: 150px;}
         .right-spacing {padding-right: 150px;}
         .center-spacing {padding-left: 100px; padding-right: 100px;text-align: center;}
-        .black-section {background-color:#040406 ; color: whitesmoke;"}
+        .black-section {background-color:#040406 ; color: lightgray;}
+        .pd-20 {padding-right: 30px;}
+        .text-white {color: white;}
+        .spacer {height: 50px;}
+        .invert-gradient {
+            background: #ffffff;
+            background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 100%);
+        }
         .container {
         
             width: 800px;
             margin: 0 auto;
-            background-color: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
                     }
         .top-bg {
             background-image: url(MainPage.png);
@@ -46,28 +56,31 @@
             background-repeat: no-repeat;
             height: 500px;
             }
-
+        .blue-gradient {
+        background: #ffffff;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 100%);
+        }
 
     </style>
 </head>
 <body>
     <nav></nav>
     <header class="center-spacing">
-        <h1>연예인이 내 친구가 될 수 있을까?</h1>
+        <h1><span class="highlight">연예인이 내 친구</span>가 될 수 있을까?</h1>
         <p>연예인과의 관계가 ‘친구’처럼 느껴지는 현상, 그 경계를 탐구하다.</p>
     </header>
     <section>
         <div class="container">
-        <img src="HandReach.jpg" alt="">
+        <img src="HandReach.jpg" style="border-radius: 12px;">
         <h2 class="right-spacing">파라소셜 관계란?</h2>
         <p class="right-spacing"> 1950년대 사회학자들이 처음 정의한 ‘파라소셜 관계’는 대중이 미디어 인물에게 느끼는 일방적인 애착을 뜻합니다.
             TV 시대에는 화면 속 배우나 앵커에게 한정되었지만, 이제는 유튜버·스트리머·아이돌까지 확장되었습니다.
             우리는 좋아요, 댓글, 팬레터로 ‘응답’을 하지만, 그 관계는 여전히 한쪽 방향일 뿐입니다.</p>
             </div>
     </section> 
-    <section>
-        <div class="container">
-        <img src="SelenaGomez.jpg" alt="">
+    <section class="blue-gradient">
+        <div class="container text-white">
+        <img src="SelenaGomez.jpg" style="border-radius: 12px">
         <h2 class="left-spacing"> 셀레나 고메즈, ‘팬심’이 만들어낸 감시의 대상</h2>
         <p class="left-spacing">2024년, Vogue 등은 셀레나 고메즈를 ‘팬덤 집착’의 대표 사례로 보도했습니다.
             일부 팬들은 그녀의 연애를 해석하고, 하이리 비버 등과 비교하며 ‘가상의 배신’ 서사를 만들었습니다.
@@ -77,8 +90,8 @@
     </section> 
     <section class="black-section">
         <div class="container">
-            <h1>왜 이런 일이 생길까?</h1>
-        <img src="Fancall1.jpeg">
+            <h1><span class="highlight">왜</span> 이런 일이 생길까?</h1>
+        <img src="Fancall1.jpeg" style="border-radius: 12px">
         <h2>‘가까워 보이도록 설계된 마케팅’</h2>
         <p>팬콜, 온라인 팬미팅, 유료 메시지 서비스 등은 ‘친밀감’을 상품으로 만듭니다.
             팬은 자신만의 관계라 느끼지만, 모든 대화와 반응은 시스템 안에서 설계된 체험입니다.
@@ -102,14 +115,15 @@
         <img src="KPopObsession.jpg" alt="">
         <h2> ‘외로움’이 만든 디지털 유대감</h2>
         <p> 2023년 Meta–Gallup 조사에 따르면 전 세계 성인 4명 중 1명이 ‘자주 외롭다’고 답했습니다.
-            팬데믹 시기, K-pop 플랫폼 이용률은 폭발적으로 증가하며 ‘고립된 관계’를 대신했습니다.
+            팬데믹 시기, <br> K-pop 플랫폼 이용률은 폭발적으로 증가하며 ‘고립된 관계’를 대신했습니다.
             셀럽은 정기적으로 감정을 공유해주는 ‘디지털 친구’로 자리 잡았습니다.
         </p>
         </div>
     </section> 
+    <section class="spacer invert-gradient"></section>
     <section>
         <div class="container" style="display: flex;" ;>
-        <img src="ParasocialGirl3.png" style="width: 50%;height: auto;" alt="">
+        <img src="ParasocialGirl3.png" style="width: 50%;height: auto; border-radius: 12px">
         <div>
         <h2>진짜 관계 대신 ‘이상적인 <br>관계’를 택하다</h2>
         <p>현대인은 불안과 상처 없는 관계를 원합니다.
@@ -118,11 +132,12 @@
         </p>
         </div>
         </div>
-    </section> 
+    </section>
+    <section class="spacer blue-gradient"></section> 
     <section class="black-section">
         <div class="container">
-        <h1>결과</h1>
-        <img src="Jungkook.jpg" alt="">
+        <h1><span class="highlight">결과</span></h1>
+        <img src="Jungkook.jpg" style="border-radius: 12px">
         <h2>“우리가 만들었으니, 우리가 정할 수 있다.”</h2>
         <p> BTS 정국의 열애설이 퍼졌을 때, 일부 팬들은 SNS에서 해명을 요구하며 불매 운동을 조직했습니다.
             일부 팬들은 ‘응원해왔으니 알 권리가 있다’고 주장했죠.
@@ -132,19 +147,20 @@
     </section> 
         <section class="black-section">
         <div class="container" style="display: flex;">
-            <div>
+            <div class="pd-20">
         <h2>사랑이 집착으로 변할 때</h2>
         <p> TWICE의 나연은 해외 팬의 지속적인 스토킹으로 경찰 보호를 받은 적이 있습니다.
             비슷한 사건은 NCT, EXO, Seventeen 등에서도 반복되고 있죠.
             이러한 사례는 ‘파라소셜 관계’가 현실의 경계를 넘을 때, 그 위험이 얼마나 치명적인지 보여줍니다.
         </p>
         </div>
-        <img src="Nayeon.png" style="width: 50%;height: auto;" alt="">
+        <img src="Nayeon.png" style="width: 50%;height: auto; border-radius: 12px" alt="">
         </div>
     </section> 
+        <section class="spacer invert-gradient"></section>
     <section>
         <div class="container">
-        <img src="Sasaeng.jpg" alt="">
+        <img src="Sasaeng.jpg" style="border-radius: 12px">
         <h2>연결에는 경계가 필요합니다</h2>
         <p>파라소셜 관계는 위로와 영감을 줄 수 있지만, 진짜 관계와 가짜 친밀감이 뒤섞일 때 문제가 시작됩니다.
             우리가 셀럽을 인간으로서 존중한다면, 그들과의 ‘거리’ 또한 존중해야 합니다.
